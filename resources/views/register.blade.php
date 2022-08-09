@@ -11,67 +11,31 @@
 </head>
 
 <body>
-
-    <div class="flex flex-col w-full h-full min-h-screen">
-        <div>
-            <section class="w-full h-full min-h-screen flex flex-col place-content-center place-items-center">
-                <div class="w-full max-w-lg ">
-                    <form class="px-3 py-7 rounded-lg ">
-                        <div class="flex flex-col  p-5 space-y-7">
-                            <section class="flex flex-row space-x-3">
-                                <input
-                                    class="form-control p-2 focus:placeholder:text-transparent block text-black transition ease-in-out m-0 placeholder-gray-900/70 w-full focus:outline-none bg-gray-200 focus:ring-0 border-b-black"
-                                    placeholder="E-mail" type="email" name="email" id="email" />
-                            </section>
-                            <section class="flex flex-row space-x-3">
-
-                                <input
-                                    class="form-control p-2 focus:placeholder:text-transparent block text-black transition ease-in-out m-0  placeholder-gray-900/70 w-full focus:outline-none bg-gray-200 focus:ring-0 border-b-black"
-                                    placeholder="Password" type="password" name="password" id="password" />
-                            </section>
-                            <section class="flex flex-row space-x-3">
-
-                                <input
-                                    class="form-control p-2 focus:placeholder:text-transparent block text-black transition ease-in-out m-0  placeholder-gray-900/70 w-full focus:outline-none bg-gray-200 focus:ring-0 border-b-black"
-                                    placeholder="Confirm password" type="password" name="confirm password"
-                                    id="password" />
-                            </section>
-                            <section class="border-2 w-full text-start p-5">
-                                <p>Sig-in with</p>
-                                <section class="flex flex-col space-y-2 py-3">
-                                    <button
-                                        class="border border-transparent flex flex-row text-center justify-center justify-items-center hover:bg-green-300 rounded border-green-900 hover:ring-2">
-                                        <a class="w-6" href="https://cdnlogo.com/logo/google-icon_489.html"><img
-                                                src="https://cdn.cdnlogo.com/logos/g/35/google-icon.svg"></a>
-                                        Google
-                                    </button>
-                                    <button
-                                        class="border border-transparent flex flex-row text-center justify-center justify-items-center hover:bg-green-300 rounded border-green-900 hover:ring-2">
-                                        Github
-                                    </button>
-                                    <button
-                                        class="border border-transparent flex flex-row text-center justify-center justify-items-center hover:bg-green-300 rounded border-green-900 hover:ring-2">
-                                        Twitter
-                                    </button>
-                                    <button
-                                        class="border border-transparent flex flex-row text-center justify-center justify-items-center hover:bg-green-300 rounded border-green-900 hover:ring-2">
-                                        Facebook
-                                    </button>
-                                    <button
-                                        class="border border-transparent flex flex-row text-center justify-center justify-items-center hover:bg-green-300 rounded border-green-900 hover:ring-2">
-                                        Instagram
-                                    </button>
-                                </section>
-                                <div class="flex flex-row">
-                                    <input type="checkbox" name="" id="">
-                                    <p>remember me</p>
-                                </div>
-                            </section>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </div>
+    <div class="flex flex-col w-full h-full min-h-screen place-content-center place-items-center
+     bg-no-repeat bg-cover bg-[url(https://media.istockphoto.com/photos/empty-dark-wooden-table-in-front-of-abstract-blurred-bokeh-background-picture-id1130714046?k=20&m=1130714046&s=612x612&w=0&h=b4bENp3GV_9nwHlYz3PJJfZkL8IlW4DTzJpV-R5XbNw=)]">
+        <form class="w-full max-w-sm">
+            <div class="space-y-2">
+                <section class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a5 5 0 1 0 5 5a5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3a3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"/></svg>
+                    <input
+                        class="form-control p-2 focus:placeholder:text-transparent block text-black transition ease-in-out m-0  placeholder-gray-900/70 w-full focus:outline-none bg-gray-200 focus:ring-0 border-b-black"
+                        placeholder="Kurt Knispel" type="text" name="username" id="password" />
+                </section>
+                <section class="">
+                    <input
+                        class="form-control p-2 focus:placeholder:text-transparent block text-black transition ease-in-out m-0 placeholder-gray-900/70 w-full focus:outline-none bg-gray-200 focus:ring-0 border-b-black"
+                        placeholder="your@email.com" type="email" name="email" id="email" />
+                </section>
+                <section class="">
+                    <input
+                        class="form-control p-2 focus:placeholder:text-transparent block text-black transition ease-in-out m-0  placeholder-gray-900/70 w-full focus:outline-none bg-gray-200 focus:ring-0 border-b-black"
+                        placeholder="*******" type="password" name="password" id="password" />
+                </section>
+            </div>
+            <button class="bg-blue-400 px-4 py-3 rounded-md ">
+                Register
+            </button>
+        </form>
     </div>
 </body>
 
