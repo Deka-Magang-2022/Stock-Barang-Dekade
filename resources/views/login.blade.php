@@ -61,9 +61,7 @@
                                 <a href="register" class="text-blue-500 hover:underline text-lg">Buat Akun Baru ?</a>
                             </div>
                         </div>
-
                         <div class="text-center">
-
                         </div>
                     </form>
                 </div>

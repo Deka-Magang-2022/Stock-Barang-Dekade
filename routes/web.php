@@ -32,6 +32,9 @@ Route::get('test', function () {
 Route::get('register', function () {
     return view('register');
 });
+Route::get('stok', function () {
+    return view('stok');
+});
 Route::get('transaksi', function () {
     return view('transaksi');
 });
