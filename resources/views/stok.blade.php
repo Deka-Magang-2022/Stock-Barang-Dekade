@@ -21,7 +21,8 @@
                         jln keledang No. 48 Vorvo Samarinda,Kalimantan Timur</p>
                 </div>
                 <section class="text-center place-items-center place-content-center pr-4">
-                    <button class="hover:text-white text-sm active:bg-gray-500 bg-red-500 hover:bg-red-200 rounded-sm px-2 py-1">
+                    <button
+                        class="hover:text-white text-sm active:bg-gray-500 bg-red-500 hover:bg-red-200 rounded-sm px-2 py-1">
                         Log out
                     </button>
                 </section>
@@ -29,7 +30,7 @@
         </div>
         <div class="flex flex-row">
             <div
-                class="h-auto min-h-screen bg-gray-200 border-r-2 border-r-black text-black w-56 font-[Helvetica] ">
+                class="h-auto min-h-screen bg-gradient-to-b from-gray-300 to-gray-400 border-r-2 border-r-black text-black w-56 font-[Helvetica] ">
                 <section class="pt-5 pb-5">
                     <section class="">
                         <a class="block pl-3 py-2 hover:text-gray-500 active:bg-gray-400 active:text-gray-900"
@@ -45,42 +46,40 @@
                     </section>
                     <section class="">
                         <a class="block pl-3 py-2 hover:text-gray-500 active:bg-gray-400 active:text-gray-900"
-                            href="#Barang Masuk">Barang Masuk</a>
+                            href="/barang-masuk">Barang Masuk</a>
                     </section>
                     <section class="">
                         <a class="block pl-3 py-2 hover:text-gray-500 active:bg-gray-400 active:text-gray-900"
-                            href="#Menu Deka">Menu Deka</a>
-                    </section>
-                    <section class="">
-                        <a class="block pl-3 py-2 hover:text-gray-500 active:bg-gray-400 active:text-gray-900"
-                            href="#pengaturan">Pengaturan</a>
+                            href="/pengaturan">Pengaturan</a>
                     </section>
                 </section>
             </div>
             {{-- isinya --}}
             <div class="bg-gray-300 w-full h-full p-9">
-                <div class="border border-b-2 border-b-black pb-6">
-                    <p class="text-6xl text-gray-900">Stok barang</p>
+                <div class="border-b-2 border-b-black pb-6">
+                    <p class="text-6xl text-gray-900 capitalize">Stok barang</p>
                 </div>
-                <div class="mt-6 text-center">
-                    <p class="text-gray-900 uppercase bg-blue-300 border-x-2 border-black border-t-2 rounded-t-lg">stok</p>
-                    <table class="w-full border-black border-y-2">
+                <div class="mt-6 text-left">
+                    <p class="uppercase text-left bg-gray-100 border border-black rounded-t-sm pl-3">barang yang berada di stok</p>
+                    <table class="w-full bg-gray-100 border-x border-x-black border-b border-b-black">
                         <thead>
-                            <tr class="grid grid-cols-5">
-                                <td class="border-black border-l-2 capitalize">id</td>
-                                <td class="border-black border-l-2 capitalize">id barang</td>
-                                <td class="border-black border-l-2 capitalize">stok sekarang</td>
-                                <td class="border-black border-l-2 capitalize">h/b/t</td>
-                                <td class="border-black border-l-2 capitalize border-r-2">aksi</td>
+                            <tr class="grid grid-cols-6 p-2 font-bold">
+                                <td class="capitalize">no</td>
+                                <td class="capitalize">nama barang</td>
+                                <td class="capitalize">stok sebelumnya</td>
+                                <td class="capitalize">h/b/t</td>
+                                <td class="capitalize">stok sekarang</td>
+                                <td class="capitalize">aksi</td>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="grid grid-cols-5">
-                                <td class="border-black border-l-2 border-t-2 capitalize">1</td>
-                                <td class="border-black border-l-2 border-t-2 capitalize">skm carnation</td>
-                                <td class="border-black border-l-2 border-t-2 capitalize">5 kaleng</td>
-                                <td class="border-black border-l-2 border-t-2 capitalize">8/10/2022</td>
-                                <td class="border-black border-x-2 border-t-2 capitalize">
+                            <tr class="grid grid-cols-6 p-2">
+                                <td class="capitalize overflow-auto">1</td>
+                                <td class="capitalize overflow-auto">skm carnation</td>
+                                <td class="capitalize overflow-auto">1 kaleng</td>
+                                <td class="capitalize overflow-auto">8/10/22</td>
+                                <td class="capitalize overflow-auto">5 kaleng</td>
+                                <td class="capitalize overflow-auto">
                                     <button class="bg-blue-600 text-white p-1 rounded-md">
                                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
                                             width="1em" height="1em" preserveAspectRatio="xMidYMid meet"

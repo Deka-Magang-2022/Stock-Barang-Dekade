@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Transaksi</title>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie=edge">
+    <title>STOK DEKADE</title>
     @vite('resources/css/app.css')
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body>
+    {{-- navnya --}}
     <div class="grid grid-cols-1 grid-rows-1 w-full">
         <div class="w-full h-full bg-gray-500 max-h-12">
             <div
@@ -22,7 +22,8 @@
                         jln keledang No. 48 Vorvo Samarinda,Kalimantan Timur</p>
                 </div>
                 <section class="text-center place-items-center place-content-center pr-4">
-                    <button class="hover:text-white text-sm active:bg-gray-500 bg-red-500 hover:bg-red-200 rounded-sm px-2 py-1">
+                    <button
+                        class="hover:text-white text-sm active:bg-gray-500 bg-red-500 hover:bg-red-200 rounded-sm px-2 py-1">
                         Log out
                     </button>
                 </section>
@@ -54,31 +55,30 @@
                     </section>
                 </section>
             </div>
-            {{-- isinya --}}
+
             <div class="bg-gray-300 w-full h-full p-9">
                 <div class="border-b-2 border-b-black pb-6">
-                    <p class="text-6xl text-gray-900 capitalize">transaksi</p>
+                    <p class="text-6xl text-gray-900 capitalize">Barang Masuk</p>
                 </div>
+
                 <div class="mt-6 text-left">
-                    <p class="uppercase text-left bg-gray-100 border border-black rounded-t-sm pl-3">transaksi</p>
+                    <p class="uppercase text-left bg-gray-100 border border-black rounded-t-sm pl-3">barang yang masuk</p>
                     <table class="w-full bg-gray-100 border-x border-x-black border-b border-b-black">
                         <thead>
-                            <tr class="grid grid-cols-6 p-2 border-b-2">
-                                <td class="capitalize font-bold">no</td>
-                                <td class="capitalize font-bold">jumlah pembelian</td>
-                                <td class="capitalize font-bold">nama barang</td>
-                                <td class="capitalize font-bold">transaksi</td>
-                                <td class="capitalize font-bold">h/b/t</td>
-                                <td class="capitalize font-bold">aksi</td>
+                            <tr class="grid grid-cols-5 p-2 font-bold">
+                                <td class="capitalize">no</td>
+                                <td class="capitalize">nama Barang</td>
+                                <td class="capitalize">jumlah</td>
+                                <td class="capitalize">h/b/t</td>
+                                <td class="capitalize">aksi</td>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="grid grid-cols-6 p-2">
+                            <tr class="grid grid-cols-5 p-2">
                                 <td class="capitalize overflow-auto">1</td>
-                                <td class="capitalize overflow-auto">3 kaleng</td>
                                 <td class="capitalize overflow-auto">skm carnation</td>
-                                <td class="capitalize overflow-auto">rp.43.500</td>
-                                <td class="capitalize overflow-auto">8/10/2022</td>
+                                <td class="capitalize overflow-auto">4 kaleng</td>
+                                <td class="capitalize overflow-auto">selasa/7/2022</td>
                                 <td class="capitalize overflow-auto">
                                     <button class="bg-blue-600 text-white p-1 rounded-md">
                                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
@@ -105,7 +105,6 @@
                         </tbody>
                     </table>
                 </div>
-
             </div>
         </div>
     </div>

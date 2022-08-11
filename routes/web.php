@@ -38,3 +38,6 @@ Route::get('stok', function () {
 Route::get('transaksi', function () {
     return view('transaksi');
 });
+Route::get('barang-masuk', function () {
+    return view('barang-masuk');
+});

@@ -30,7 +30,7 @@
         </div>
         <div class="flex flex-row">
             <div
-                class="h-auto min-h-screen bg-gray-200 border-r-2 border-r-black text-black w-56 font-[Helvetica] ">
+                class="h-auto min-h-screen bg-gradient-to-b from-gray-300 to-gray-400 border-r-2 border-r-black text-black w-56 font-[Helvetica] ">
                 <section class="pt-5 pb-5">
                     <section class="">
                         <a class="block pl-3 py-2 hover:text-gray-500 active:bg-gray-400 active:text-gray-900"
@@ -46,15 +46,11 @@
                     </section>
                     <section class="">
                         <a class="block pl-3 py-2 hover:text-gray-500 active:bg-gray-400 active:text-gray-900"
-                            href="#Barang Masuk">Barang Masuk</a>
+                            href="/barang-masuk">Barang Masuk</a>
                     </section>
                     <section class="">
                         <a class="block pl-3 py-2 hover:text-gray-500 active:bg-gray-400 active:text-gray-900"
-                            href="#Menu Deka">Menu Deka</a>
-                    </section>
-                    <section class="">
-                        <a class="block pl-3 py-2 hover:text-gray-500 active:bg-gray-400 active:text-gray-900"
-                            href="#pengaturan">Pengaturan</a>
+                            href="/pengaturan">Pengaturan</a>
                     </section>
                 </section>
             </div>
