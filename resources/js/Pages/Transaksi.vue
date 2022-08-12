@@ -7,7 +7,7 @@ import Sidebar from "../Shared/Sidebar.vue";
   <Pala />
   <div class="flex flex-row">
     <Sidebar />
-    <div class="bg-gray-300 w-full h-full p-9">
+    <div class="bg-gray-200 w-full h-full min-h-screen p-9">
       <div class="border-b-2 border-b-black pb-6">
         <p class="text-6xl text-gray-900 capitalize">transaksi</p>
       </div>
