@@ -41,3 +41,6 @@ Route::get('transaksi', function () {
 Route::get('barang-masuk', function () {
     return view('barang-masuk');
 });
+Route::get('pengaturan', function () {
+    return view('pengaturan');
+});
