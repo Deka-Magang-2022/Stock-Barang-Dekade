@@ -47,16 +47,13 @@
                             </section>
                         </div>
                         <div class="flex place-content-center text-center mt-5">
-                            <a href=""
+                            <a href="/dashboard"
                                 class="bg-gray-700/70 text-white hover:text-gray-700 hover:bg-gray-200 py-2 w-full max-w-sm focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-300 ease-in-out "
                                 type="button">
                                 Masuk
                             </a>
                         </div>
                         <div class="flex justify-evenly mt-2">
-                            <div>
-                                <a class="text-blue-500 hover:underline text-lg" href="">Lupa Password ?</a>
-                            </div>
                             <div>
                                 <a href="register" class="text-blue-500 hover:underline text-lg">Buat Akun Baru ?</a>
                             </div>
