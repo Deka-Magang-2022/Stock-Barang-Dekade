@@ -1,21 +1,15 @@
 <script setup>
-import Pala from "../Shared/Pala.vue";
-import Sidebar from "../Shared/Sidebar.vue";
+import BukanLayout from "../Layouts/BukanLayout.vue";
 </script>
 
 <template>
-  <Pala />
-  <div class="flex flex-row">
-    <Sidebar />
-    <div class="bg-gray-200 w-full h-full min-h-screen p-9">
+  <BukanLayout>
+    <div class="bg-gray-300 w-full h-full min-h-screen xl:pl-60">
       <div class="border-b-2 border-b-black pb-6">
         <p class="text-6xl text-gray-900 capitalize">transaksi</p>
       </div>
       <div class="mt-6 text-left">
-        <p class="uppercase text-left bg-gray-100 border border-black rounded-t-sm pl-3">
-          transaksi
-        </p>
-        <table class="w-full bg-gray-100 border-x border-x-black border-b border-b-black">
+        <table class="w-full bg-gray-100 border-x border-x-black border-y border-y-black">
           <thead>
             <tr class="grid grid-cols-6 p-2 border-b-2">
               <td class="capitalize font-bold">no</td>
@@ -77,6 +71,5 @@ import Sidebar from "../Shared/Sidebar.vue";
         </table>
       </div>
     </div>
-  </div>
+  </BukanLayout>
 </template>
-m h

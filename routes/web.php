@@ -38,4 +38,13 @@ Route::middleware([
     Route::get('/transaksi', function () {
         return Inertia::render('Transaksi');
     })->name('transaksi');
+    Route::get('/barangmasuk', function () {
+        return Inertia::render('BarangMasuk');
+    })->name('barangmasuk');
+    Route::get('/akun', function () {
+        return Inertia::render('Akun');
+    })->name('akun');
+    Route::get('/test', function () {
+        return Inertia::render('TestingField');
+    })->name('test');
 });

@@ -1,17 +1,14 @@
 <script setup>
-import Pala from "../Shared/Pala.vue";
-import Sidebar from "../Shared/Sidebar.vue";
+import BukanLayout from "../Layouts/BukanLayout.vue";
 </script>
 
 <template>
-  <Pala />
-  <div class="flex flex-row">
-    <Sidebar />
-    <div class="bg-gray-200 w-full h-full min-h-screen p-9">
+  <BukanLayout>
+    <div class="bg-gray-300 w-full h-full min-h-screen xl:pl-60">
       <div class="border-b-2 border-b-black pb-6">
         <p class="text-6xl text-gray-900">Dashboard</p>
       </div>
-      <div class="grid grid-flow-row grid-cols-3 space-x-5">
+      <div class="grid grid-flow-row grid-cols-3">
         <section
           class="border-blue-400 border-2 flex flex-col place-items-center my-6 text-center"
         >
@@ -47,5 +44,5 @@ import Sidebar from "../Shared/Sidebar.vue";
         </section>
       </div>
     </div>
-  </div>
+  </BukanLayout>
 </template>

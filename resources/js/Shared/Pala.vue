@@ -1,29 +1,35 @@
-<script setup>
-import JetNavLink from "@/Jetstream/NavLink.vue";
-</script>
-
 <template>
-  <div class="grid grid-cols-1 grid-rows-1 w-full">
-    <div
-      class="w-full h-full bg-[image:linear-gradient(to_right,theme(colors.blue.500)_85%,theme(colors.blue.900))] max-h-12"
-    >
-      <div
-        class="p-2 w-full h-full flex flex-row text-gray-100 text-2xl text-[times-new-roman] justify-between place-items-center"
-      >
-        <div class="flex place-items-center">
-          <JetNavLink class="text-gray-100 text-2xl" href="#home"
-            >DEKADE COFFEE</JetNavLink
+  <div class="flex flex-col w-full px-9 bg-slate-300 text-gray-900">
+    <nav class="py-3 w-full h-13">
+      <div class="w-full h-full text-right">
+        <button class="rounded-sm px-3 py-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            style="vertical-align: -0.125em"
+            width="1em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
           >
-          <p class="pl-4 text-sm">jln keledang No. 48 Vorvo Samarinda,Kalimantan Timur</p>
-        </div>
-        <section class="text-center place-items-center place-content-center pr-4">
-          <button
-            class="hover:text-white text-sm active:bg-gray-500 bg-red-500 hover:bg-red-200 rounded-sm px-2 py-1"
-          >
-            Log out
-          </button>
-        </section>
+            <path
+              fill="currentColor"
+              d="M19.002 3h-14c-1.103 0-2 .897-2 2v4h2V5h14v14h-14v-4h-2v4c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.898-2-2-2z"
+            />
+            <path fill="currentColor" d="m11 16l5-4l-5-4v3.001H3v2h8z" />
+          </svg>
+        </button>
       </div>
-    </div>
+    </nav>
+    <slot />
+
+    <footer>
+      <div class="flex px-3 py-1 bg-slate-300">
+        <p class="text-sm w-full capitalize text-right">
+          jln keledang No. 48 Vorvo Samarinda, Kalimantan Timur
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
