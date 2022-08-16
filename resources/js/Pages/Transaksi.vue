@@ -4,30 +4,34 @@ import BukanLayout from "../Layouts/BukanLayout.vue";
 
 <template>
   <BukanLayout>
-    <div class="bg-gray-300 w-full h-full min-h-screen xl:pl-60">
+    <div class="bg-gray-300 w-full h-full min-h-screen">
       <div class="border-b-2 border-b-black pb-6">
         <p class="text-6xl text-gray-900 capitalize">transaksi</p>
       </div>
       <div class="mt-6 text-left">
         <table class="w-full bg-gray-100 border-x border-x-black border-y border-y-black">
           <thead>
-            <tr class="grid grid-cols-6 p-2 border-b-2">
-              <td class="capitalize font-bold">no</td>
-              <td class="capitalize font-bold">jumlah pembelian</td>
-              <td class="capitalize font-bold">nama barang</td>
-              <td class="capitalize font-bold">transaksi</td>
-              <td class="capitalize font-bold">h/b/t</td>
-              <td class="capitalize font-bold">aksi</td>
+            <tr class="grid grid-cols-6">
+              <td class="capitalize border-r border-b pl-3 py-3 font-bold">no</td>
+              <td class="capitalize border-r border-b pl-3 py-3 font-bold">
+                jumlah pembelian
+              </td>
+              <td class="capitalize border-r border-b pl-3 py-3 font-bold">
+                nama barang
+              </td>
+              <td class="capitalize border-r border-b pl-3 py-3 font-bold">transaksi</td>
+              <td class="capitalize border-r border-b pl-3 py-3 font-bold">h/b/t</td>
+              <td class="capitalize font-bold pl-3 py-3 border-b">aksi</td>
             </tr>
           </thead>
           <tbody>
-            <tr class="grid grid-cols-6 p-2">
-              <td class="capitalize overflow-auto">1</td>
-              <td class="capitalize overflow-auto">3 kaleng</td>
-              <td class="capitalize overflow-auto">skm carnation</td>
-              <td class="capitalize overflow-auto">rp.43.500</td>
-              <td class="capitalize overflow-auto">8/10/2022</td>
-              <td class="capitalize overflow-auto">
+            <tr class="grid grid-cols-6 hover:bg-gray-200">
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">1</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">3 kaleng</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">skm carnation</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">rp.43.500</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">8/10/2022</td>
+              <td class="capitalize overflow-auto pl-3 py-3">
                 <button class="bg-blue-600 text-white p-1 rounded-md">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

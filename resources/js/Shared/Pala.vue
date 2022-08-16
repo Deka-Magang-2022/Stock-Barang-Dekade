@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col w-full px-9 bg-slate-300 text-gray-900">
+  <div class="flex flex-col w-full px-10 bg-gray-300 text-gray-900">
     <nav class="py-3 w-full h-13">
       <div class="w-full h-full text-right">
-        <button class="rounded-sm px-3 py-1">
+        <button class="rounded-sm py-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
@@ -22,7 +22,9 @@
         </button>
       </div>
     </nav>
-    <slot />
+    <section class="xl:pl-60 lg:pl-60">
+      <slot />
+    </section>
 
     <footer>
       <div class="flex px-3 py-1 bg-slate-300">

@@ -3,7 +3,7 @@ import BukanLayout from "../Layouts/BukanLayout.vue";
 </script>
 <template>
   <BukanLayout>
-    <div class="bg-gray-300 w-full h-full min-h-screen xl:pl-60">
+    <div class="bg-gray-300 w-full h-full min-h-screen">
       <div class="border-b-2 border-b-black pb-6">
         <p class="text-6xl text-gray-900 capitalize">Barang Masuk</p>
       </div>
@@ -11,21 +11,21 @@ import BukanLayout from "../Layouts/BukanLayout.vue";
       <div class="mt-6 text-left">
         <table class="w-full bg-gray-100 border-x border-x-black border-y border-y-black">
           <thead>
-            <tr class="grid grid-cols-5 p-2 font-bold">
-              <td class="capitalize">no</td>
-              <td class="capitalize">nama Barang</td>
-              <td class="capitalize">jumlah</td>
-              <td class="capitalize">h/b/t</td>
-              <td class="capitalize">aksi</td>
+            <tr class="grid grid-cols-5 font-bold">
+              <td class="capitalize border-r border-b pl-3 py-3">no</td>
+              <td class="capitalize border-r border-b pl-3 py-3">nama Barang</td>
+              <td class="capitalize border-r border-b pl-3 py-3">jumlah</td>
+              <td class="capitalize border-r border-b pl-3 py-3">h/b/t</td>
+              <td class="capitalize border-r border-b pl-3 py-3">aksi</td>
             </tr>
           </thead>
           <tbody>
-            <tr class="grid grid-cols-5 p-2">
-              <td class="capitalize overflow-auto">1</td>
-              <td class="capitalize overflow-auto">skm carnation</td>
-              <td class="capitalize overflow-auto">4 kaleng</td>
-              <td class="capitalize overflow-auto">11/8/2022</td>
-              <td class="capitalize overflow-auto">
+            <tr class="grid grid-cols-5 hover:bg-gray-200">
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">1</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">skm carnation</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">4 kaleng</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">11/8/2022</td>
+              <td class="capitalize pl-3 py-3 overflow-auto">
                 <button class="bg-blue-600 text-white p-1 rounded-md">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -1,35 +1,36 @@
 <script setup>
 import BukanLayout from "../Layouts/BukanLayout.vue";
+import Fieldinput from "../Shared/Fieldinput.vue";
 </script>
 
 <template>
   <BukanLayout>
-    <div class="bg-gray-300 w-full h-full min-h-screen xl:pl-60">
+    <div class="bg-gray-300 w-full h-full min-h-screen">
       <div class="border-b-2 border-b-black pb-6">
         <p class="text-6xl text-gray-900 capitalize">Stok barang</p>
       </div>
       <div class="mt-6 text-left">
         <table class="w-full bg-gray-100 border-x border-x-black border-y border-y-black">
           <thead>
-            <tr class="grid grid-cols-7 p-2 font-bold">
-              <td class="capitalize">id</td>
-              <td class="capitalize">nama barang</td>
-              <td class="capitalize">stok sebelumnya</td>
-              <td class="capitalize">h/b/t</td>
-              <td class="capitalize">stok sekarang</td>
-              <td class="capitalize">h/b/t</td>
-              <td class="capitalize">aksi</td>
+            <tr class="grid grid-cols-7 font-bold">
+              <td class="capitalize border-r border-b pl-3 py-3">id</td>
+              <td class="capitalize border-r border-b pl-3 py-3">nama barang</td>
+              <td class="capitalize border-r border-b pl-3 py-3">stok sebelumnya</td>
+              <td class="capitalize border-r border-b pl-3 py-3">h/b/t</td>
+              <td class="capitalize border-r border-b pl-3 py-3">stok sekarang</td>
+              <td class="capitalize border-r border-b pl-3 py-3">h/b/t</td>
+              <td class="capitalize border-r border-b pl-3 py-3">aksi</td>
             </tr>
           </thead>
           <tbody>
-            <tr class="grid grid-cols-7 p-2">
-              <td class="capitalize overflow-auto">1</td>
-              <td class="capitalize overflow-auto">skm carnation</td>
-              <td class="capitalize overflow-auto">1 kaleng</td>
-              <td class="capitalize overflow-auto">10/8/22</td>
-              <td class="capitalize overflow-auto">5 kaleng</td>
-              <td class="capitalize overflow-auto">11/8/22</td>
-              <td class="capitalize overflow-auto">
+            <tr class="grid grid-cols-7 hover:bg-gray-200">
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">1</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">skm carnation</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">1 kaleng</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">10/8/22</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">5 kaleng</td>
+              <td class="capitalize border-r pl-3 py-3 overflow-auto">11/8/22</td>
+              <td class="capitalize pl-3 py-3 overflow-auto">
                 <button class="bg-blue-600 text-white p-1 rounded-md">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +72,45 @@ import BukanLayout from "../Layouts/BukanLayout.vue";
             </tr>
           </tbody>
         </table>
+      </div>
+      <div class="border-b-2 border-b-black py-6">
+        <p class="text-6xl text-gray-900 capitalize">tambah stok</p>
+      </div>
+      <div>
+        <div class="mt-4">
+          <form action="">
+            <div>
+              <select class="w-56" name="nama_barang" id="">
+                <option class="capitalize" :value="null">Nama Barang</option>
+                <option class="capitalize" value="skm_carnation">skm carnation</option>
+                <option class="capitalize" value="gula">gula</option>
+                <option class="capitalize" value="biji_kopi">biji kopi</option>
+              </select>
+            </div>
+            <div>
+              <input
+                class="w-56"
+                type="number"
+                name="jumlah_barang"
+                id="jumlah_barang"
+                placeholder="Jumlah Barang"
+              />
+            </div>
+            <div class="flex flex-row w-full max-w-64">
+              <input
+                class="w-56"
+                type="number"
+                name="no_satuan"
+                id="no_satuan"
+                placeholder="Satuan"
+              />
+              <select name="satuan" id="satuan">
+                <option value="g">g</option>
+                <option value="kaleng">kaleng</option>
+              </select>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </BukanLayout>

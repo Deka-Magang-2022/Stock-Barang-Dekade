@@ -44,7 +44,7 @@ Route::middleware([
     Route::get('/akun', function () {
         return Inertia::render('Akun');
     })->name('akun');
-    Route::get('/test', function () {
+    Route::get('/testingfield', function () {
         return Inertia::render('TestingField');
-    })->name('test');
+    })->name('testingfield');
 });

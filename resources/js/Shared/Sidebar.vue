@@ -6,11 +6,9 @@ import DropdownLink from "@/Jetstream/DropdownLink.vue";
 
 <template>
   <div class="flex flex-row">
-    <div
-      class="h-auto min-h-screen bg-gray-200 text-gray-900 w-56 font-[Helvetica] overflow-auto fixed"
-    >
+    <div class="bg-gray-200 min-h-screen text-gray-900 w-56 font-[Helvetica] fixed">
       <!-- sidenav menu -->
-      <section class="pt-5 pb-5">
+      <section class="overflow-auto">
         <section class="hover:text-blue-300 hover:bg-blue-900">
           <JetNavLink class="flex flex-row items-center pl-3 py-2" href="/dashboard">
             <span>
@@ -30,6 +28,28 @@ import DropdownLink from "@/Jetstream/DropdownLink.vue";
                 />
               </svg> </span
             >DashBoard
+          </JetNavLink>
+        </section>
+
+        <section class="hover:text-blue-300 hover:bg-blue-900">
+          <JetNavLink class="flex flex-row items-center pl-3 py-2" href="/stok">
+            <span>
+              <svg
+                class="w-8 h-8 pr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="img"
+                width="1em"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="M24 21c-.5 0-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm-8 0c-.5 0-1-.2-1.4-.6l-3-3C11.2 9 11 8.5 11 8s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm0 24c-.5 0-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm-8 0c-.5 0-1-.2-1.4-.6l-3-3C3.2 17 3 16.5 3 16s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3z"
+                />
+              </svg> </span
+            >Stok
           </JetNavLink>
         </section>
         <section class="hover:text-blue-300 hover:bg-blue-900">
@@ -60,27 +80,6 @@ import DropdownLink from "@/Jetstream/DropdownLink.vue";
                 </g>
               </svg> </span
             >Transaksi
-          </JetNavLink>
-        </section>
-        <section class="hover:text-blue-300 hover:bg-blue-900">
-          <JetNavLink class="flex flex-row items-center pl-3 py-2" href="/stok">
-            <span>
-              <svg
-                class="w-8 h-8 pr-2"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                role="img"
-                width="1em"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  fill="currentColor"
-                  d="M24 21c-.5 0-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm-8 0c-.5 0-1-.2-1.4-.6l-3-3C11.2 9 11 8.5 11 8s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm0 24c-.5 0-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm-8 0c-.5 0-1-.2-1.4-.6l-3-3C3.2 17 3 16.5 3 16s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3z"
-                />
-              </svg> </span
-            >Stok
           </JetNavLink>
         </section>
         <section class="hover:text-blue-300 hover:bg-blue-900">

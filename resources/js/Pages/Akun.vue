@@ -4,7 +4,7 @@ import BukanLayout from "../Layouts/BukanLayout.vue";
 
 <template>
   <BukanLayout>
-    <div class="bg-gray-300 w-full h-full min-h-screen xl:pl-60">
+    <div class="bg-gray-300 w-full h-full min-h-screen">
       <div class="border-b-2 border-b-black pb-6">
         <p class="text-6xl text-gray-900">Akun</p>
       </div>
