@@ -2,7 +2,10 @@
     <nav class="">
         <div
             class=" h-auto min-h-screen bg-gradient-to-b from-gray-800 to-gray-600 border-r-2 border-r-black text-white w-56 font-[Helvetica] fixed">
-            <section class="pt-5 pb-5">
+            <section>
+                <section class="text-center py-3">
+                    <p class="text-xl">logo</p>
+                </section>
                 <section>
                     <a class="flex flex-row items-center pl-3 py-2 hover:bg-gray-500" href="/dashboard">
                         <span>

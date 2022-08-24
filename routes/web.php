@@ -13,31 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-});
-
-Route::get('login', function () {
-    return view('login');
-});
 
 
-Route::get('test', function () {
-    return view('test');
-});
 
-Route::get('register', function () {
-    return view('register');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/', function () {
+        return view('dashboard');
+    });
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    });
+    Route::get('/stok', function () {
+        return view('stok');
+    });
+    Route::get('/barang-masuk', function () {
+        return view('barang-masuk');
+    });
+    Route::get('/barang-keluar', function () {
+        return view('barang-keluar');
+    });
+    Route::get('/transaksi', function () {
+        return view('transaksi');
+    });
+    Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
 });
-Route::get('stok', function () {
-    return view('stok');
-});
-Route::get('transaksi', function () {
-    return view('transaksi');
-});
-Route::get('barang-masuk', function () {
-    return view('barang-masuk');
-});
-Route::get('barang-keluar', function () {
-    return view('barang-keluar');
-});
+require __DIR__.'/auth.php';
