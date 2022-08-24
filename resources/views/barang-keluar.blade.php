@@ -1,29 +1,27 @@
 @extends('layouts.default')
 
 @section('content')
-    <title>Stok</title>
+<title>Barang Keluar</title>
     <div class="border-b-2 border-b-black pb-6">
-        <p class="text-6xl text-gray-900 capitalize">Stok barang</p>
+        <p class="text-6xl text-gray-900 capitalize">Barang Keluar</p>
     </div>
     <div class="mt-6 text-left bg-white border border-black">
         <table class="w-full">
             <thead>
                 <tr class="border-b font-bold">
-                    <td class="capitalize border-r p-4">no</td>
-                    <td class="capitalize border-r p-4">nama barang</td>
-                    <td class="capitalize border-r p-4">stok sebelumnya</td>
-                    <td class="capitalize border-r p-4">h/b/t</td>
-                    <td class="capitalize border-r p-4">stok sekarang</td>
-                    <td class="capitalize p-4">aksi</td>
+                    <td class="capitalize p-4 border-r">no</td>
+                    <td class="capitalize p-4 border-r">nama Barang</td>
+                    <td class="capitalize p-4 border-r">total barang keluar</td>
+                    <td class="capitalize p-4 border-r">satuan</td>
+                    <td class="capitalize p-4 border-r">aksi</td>
                 </tr>
             </thead>
             <tbody>
-                <tr class="hover:bg-gray-100">
-                    <td class="capitalize p-4 overflow-auto border-r">1</td>
-                    <td class="capitalize p-4 overflow-auto border-r">skm carnation</td>
-                    <td class="capitalize p-4 overflow-auto border-r">1 kaleng</td>
-                    <td class="capitalize p-4 overflow-auto border-r">8/10/22</td>
-                    <td class="capitalize p-4 overflow-auto border-r">5 kaleng</td>
+                <tr class="hover:bg-gray-200">
+                    <td class="capitalize p-4 border-r overflow-auto">1</td>
+                    <td class="capitalize p-4 border-r overflow-auto">skm carnation</td>
+                    <td class="capitalize p-4 border-r overflow-auto">4 kaleng</td>
+                    <td class="capitalize p-4 border-r overflow-auto">satuan</td>
                     <td class="capitalize p-4 overflow-auto">
                         <button class="bg-blue-600 text-white p-1 rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"

@@ -17,7 +17,7 @@
             <div
                 class="p-2 w-full h-full flex flex-row text-gray-100 text-[times-new-roman] justify-between place-items-center">
                 <div class="flex place-items-center">
-                    <a class="text-2xl" href="/dashboard">DEKADE COFFEE</a>
+                    <a class="text-2xl" href="/dashboard">STOCK DEKADE</a>
                     <p class="pl-4 text-sm">
                         Jln keledang No. 48 Vorvo Samarinda, Kalimantan Timur
                     </p>
@@ -31,6 +31,8 @@
             </div>
         </div>
         <div class="flex flex-row">
+            {{-- sidebar --}}
+
             <div
                 class="h-auto min-h-screen bg-gradient-to-b from-gray-800 to-gray-600 border-r-2 border-r-black text-white w-56 font-[Helvetica] ">
                 <section class="pt-5 pb-5">
@@ -106,27 +108,7 @@
                 <div class="border-b-2 border-b-black pb-6">
                     <p class="text-6xl text-gray-900">Pengaturan</p>
                 </div>
-                <div class="p-6">
-                    <p class="font-semibold capitalize text-xl">profil</p>
-                    <div class="">
-                        <form>
-                            <div class="flex flex-row py-6">
-                                <div class="grid grid-rows-2 w-full">
-                                    <label for="username">Username</label>
-                                    <input type="text" id="username" name="username" value="kurt knispel">
-                                    <label for="tentang">Tentang</label>
-                                    <textarea name="tentang" id="tentang" cols="30" rows="5"></textarea>
-                                </div>
-                                <label for="foto">Foto</label>
-                                <input class="w-48 rounded-full h-auto" type="image"
-                                    src="https://cdn.pixabay.com/photo/2017/06/13/12/54/profile-2398783_960_720.png"
-                                    alt="anggaplah foto mu"
-                                    name="foto"
-                                    >
-                            </div>
-                        </form>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

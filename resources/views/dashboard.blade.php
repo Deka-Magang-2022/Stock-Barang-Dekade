@@ -1,150 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>STOK DEKADE</title>
-        @vite('resources/css/app.css')
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-
-    <body>
-        {{-- navnya --}}
-        <div class="grid grid-cols-1 grid-rows-1 w-full">
-            <div class="w-full h-full bg-sky-600">
-                <div
-                    class="p-2 w-full h-full flex flex-row text-gray-100 text-[times-new-roman] justify-between place-items-center">
-                    <div class="flex place-items-center">
-                        <a class="text-2xl" href="/dashboard">DEKADE COFFEE</a>
-                        <p class="pl-4 text-sm">
-                            Jln keledang No. 48 Vorvo Samarinda, Kalimantan Timur
-                        </p>
+@extends('layouts.default')
+@section('content')
+    <title>Dashboard</title>
+    <div class="border-b-2 border-b-black pb-6">
+        <p class="text-6xl text-gray-900">Dashboard</p>
+    </div>
+    <div class="grid grid-flow-row grid-cols-3 space-x-5 pt-6">
+        <div class="flex-1 p-6 bg-white rounded-lg hover:shadow-xl duration-300">
+            <div class="justify-between items-center flex">
+                <div class="flex shrink-0 grow-0 items-center justify-center">
+                    <div>
+                        <h3 class="text-lg leading-tight text-gray-900 capitalize">stok</h3>
+                        <h1 class="text-3xl leading-tight font-semibold">
+                            <div>69</div>
+                        </h1>
                     </div>
-                    <section class="pr-4">
-                        <button
-                            class="hover:text-white active:bg-gray-500 bg-red-500 hover:bg-red-200 rounded-sm px-2 py-1">
-                            Log out
-                        </button>
-                    </section>
                 </div>
-            </div>
-            <div class="flex flex-row">
-                <div
-                    class="h-auto min-h-screen bg-gradient-to-b from-gray-800 to-gray-600 border-r-2 border-r-black text-white w-56 font-[Helvetica] ">
-                    <section class="pt-5 pb-5">
-                        <section class="">
-                            <a class="flex flex-row items-center pl-3 py-2 hover:bg-gray-500" href="/dashboard">
-                                <span>
-                                    <svg class="w-8 h-8 pr-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="M11 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h6v18zm2 0h6c1.1 0 2-.9 2-2v-7h-8v9zm8-11V5c0-1.1-.9-2-2-2h-6v7h8z" />
-                                    </svg>
-                                </span>DashBoard
-                            </a>
-                        </section>
-                        <section class="">
-                            <a class="flex flex-row items-center pl-3 py-2 hover:bg-gray-500" href="/transaksi">
-                                <span>
-                                    <svg class="w-8 h-8 pr-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 24 24">
-                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2">
-                                            <path
-                                                d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7Z" />
-                                            <circle cx="12" cy="12" r="3" />
-                                            <path d="M2 9v0a4 4 0 0 0 4-4v0m12 14v0a4 4 0 0 1 4-4v0" />
-                                        </g>
-                                    </svg>
-                                </span>Transaksi
-                            </a>
-                        </section>
-                        <section class="">
-                            <a class="flex flex-row items-center pl-3 py-2 hover:bg-gray-500" href="/stok">
-                                <span>
-                                    <svg class="w-8 h-8 pr-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 32 32">
-                                        <path fill="currentColor"
-                                            d="M24 21c-.5 0-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm-8 0c-.5 0-1-.2-1.4-.6l-3-3C11.2 9 11 8.5 11 8s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm0 24c-.5 0-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3zm-8 0c-.5 0-1-.2-1.4-.6l-3-3C3.2 17 3 16.5 3 16s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4c0 .5-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6zm0-8l-3 3l3 3l3-3l-3-3z" />
-                                    </svg>
-                                </span>Stok
-                            </a>
-                        </section>
-                        <section class="">
-                            <a class="flex flex-row items-center pl-3 py-2 hover:bg-gray-500" href="/barang-masuk">
-                                <span>
-                                    <svg class="w-8 h-8 pr-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 20 20">
-                                        <path fill="currentColor"
-                                            d="M11 3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V3Zm4 0h-3v2h3V3Zm-1.5 4a.5.5 0 0 1 .5.5v5.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L13 13.293V7.5a.5.5 0 0 1 .5-.5ZM4 12a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2Zm4 0H5v2h3v-2Zm-5.5 1a.5.5 0 0 1 .5.5V15a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1.5a.5.5 0 0 1 1 0V15a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1.5a.5.5 0 0 1 .5-.5Z" />
-                                    </svg>
-                                </span>Barang Masuk
-                            </a>
-                        </section>
-                        <section class="">
-                            <a class="flex flex-row items-center pl-3 py-2 hover:bg-gray-500" href="/pengaturan">
-                                <span>
-                                    <svg class="w-8 h-8 pr-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                        role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
-                                        viewBox="0 0 24 24">
-                                        <path fill="currentColor"
-                                            d="m12 23l-9.5-5.5v-11L12 1l9.5 5.5v11L12 23Zm0-19.688L4.5 7.653v8.694l7.5 4.342l7.5-4.342V7.653L12 3.311v.001ZM12 16a4 4 0 1 1 2.828-1.172A4.027 4.027 0 0 1 12 16Zm0-6a2 2 0 1 0-.001 4A2 2 0 0 0 12 10Z" />
-                                    </svg>
-                                </span>Pengaturan
-                            </a>
-                        </section>
-                    </section>
-                </div>
-                {{-- isinya --}}
-                <div class="bg-gray-300 w-full h-full p-9">
-                    <div class="border-b-2 border-b-black pb-6">
-                        <p class="text-6xl text-gray-900">Dashboard</p>
-                    </div>
-                    <div class="grid grid-flow-row grid-cols-3 space-x-5">
-                        <section class="border-blue-400 border-2 flex flex-col place-items-center my-6 text-center">
-                            <div class="bg-blue-400 w-full px-8 py-4">
-                                <p class="text-gray-100">Barang yang masih di stok</p>
-                            </div>
-                            <div class="py-6 text-2xl">
-                                90
-                            </div>
-                            <div class="bg-gray-300 text-blue-400 font-bold py-4 w-full text-center">
-                                <button>Tabel Barang</button>
-                            </div>
-                        </section>
-                        <section class="border-gray-300 border-2 flex flex-col place-items-center my-6 text-center">
-                            <div class="bg-green-100 w-full px-8 py-4">
-                                <p class="text-green-600">Barang Masuk</p>
-                            </div>
-                            <div class="py-6 text-2xl">
-                                10
-                            </div>
-                            <div class="bg-gray-300 text-blue-400 font-bold py-4 w-full text-center">
-                                <button>Tabel Barang</button>
-                            </div>
-                        </section>
-                        <section class="border-rose-100 border-2 flex flex-col place-items-center my-6 text-center">
-                            <div class="bg-rose-100 w-full px-8 py-4">
-                                <p class="text-rose-600">Menu Deka</p>
-                            </div>
-                            <div class="py-6 text-2xl">
-                                4
-                            </div>
-                            <div class="bg-gray-300 text-blue-400 font-bold py-4 w-full text-center">
-                                <button>Tabel Menu</button>
-                            </div>
-                        </section>
-                    </div>
+                <div class="flex shrink-0 grow-0 items-center justify-center"><span
+                        class="inline-flex justify-center items-center  h-16 text-emerald-500">
+
+                        <svg class="inline-block w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m8.1 13.34l2.83-2.83L3.91 3.5a4.008 4.008 0 0 0 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38c1.91-1.91 2.28-4.65.81-6.12c-1.46-1.46-4.2-1.1-6.12.81c-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88l1.41-1.41L13.41 13l1.47-1.47z" />
+                        </svg> </span>
                 </div>
             </div>
         </div>
-
-    </body>
-
-</html>
+        <div class="flex-1 p-6 bg-white rounded-lg hover:shadow-xl duration-300">
+            <div class="justify-between items-center flex">
+                <div class="flex shrink-0 grow-0 items-center justify-center">
+                    <div>
+                        <h3 class="text-lg leading-tight text-gray-900 capitalize">barang masuk</h3>
+                        <h1 class="text-3xl leading-tight font-semibold">
+                            <div>90</div>
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex shrink-0 grow-0 items-center justify-center"><span
+                        class="inline-flex justify-center items-center  h-16 text-emerald-500">
+                        <svg class="inline-block w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M15 2.5a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5v1.5a.75.75 0 0 1-1.5 0v-1.5h-1.5a.75.75 0 0 1 0-1.5h1.5v-1.5A.75.75 0 0 1 15 2.5ZM4.75 3A1.75 1.75 0 0 0 3 4.75v10.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0 0 17 15.25v-4.5A1.75 1.75 0 0 0 15.25 9h-4a.25.25 0 0 1-.25-.25v-4A1.75 1.75 0 0 0 9.25 3h-4.5ZM4.5 4.75a.25.25 0 0 1 .25-.25h4.5a.25.25 0 0 1 .25.25v4c0 .085.006.168.018.25H4.5V4.75Zm5 5.75v5H4.75a.25.25 0 0 1-.25-.25V10.5h5Zm1.5 5v-5.018c.082.012.165.018.25.018h4a.25.25 0 0 1 .25.25v4.5a.25.25 0 0 1-.25.25H11Z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 p-6 bg-white rounded-lg hover:shadow-xl duration-300">
+            <div class="justify-between items-center flex">
+                <div class="flex shrink-0 grow-0 items-center justify-center">
+                    <div>
+                        <h3 class="text-lg leading-tight text-gray-900 capitalize">barang keluar</h3>
+                        <h1 class="text-3xl leading-tight font-semibold">
+                            <div>21</div>
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex shrink-0 grow-0 items-center justify-center">
+                    <span class="inline-flex justify-center items-center  h-16 text-emerald-500">
+                        <svg class="inline-block w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+                            <g fill="currentColor">
+                                <path
+                                    d="M27.707 7.707a1 1 0 0 0-1.414-1.414L24 8.586l-2.293-2.293a1 1 0 1 0-1.414 1.414L22.586 10l-2.293 2.293a1 1 0 0 0 1.414 1.414L24 11.414l2.293 2.293a1 1 0 1 0 1.414-1.415L25.414 10l2.293-2.293Z" />
+                                <path fill-rule="evenodd"
+                                    d="M6.684 26.449L10 27.554V36a1 1 0 0 0 .673.945l12.992 4.497a.99.99 0 0 0 .637.011l.014-.004l.015-.005l12.996-4.499A1 1 0 0 0 38 36v-8.446l3.316-1.105a1 1 0 0 0 .465-1.574l-4-5a1 1 0 0 0-.456-.32l-12.998-4.5a1 1 0 0 0-.654 0l-12.998 4.5a.999.999 0 0 0-.456.32l-4 5a1 1 0 0 0 .465 1.574Zm14.635 4.124l1.681-2.4v10.923l-11-3.808V28.22l8.184 2.728a1 1 0 0 0 1.135-.376ZM14.057 20.5L24 23.942l9.943-3.442L24 17.058L14.057 20.5Zm12.624 10.073L25 28.174v10.923l11-3.808V28.22l-8.184 2.728a1 1 0 0 1-1.135-.376ZM11.34 21.676l-2.663 3.329l5.511 1.837l5.92 1.973l2.313-3.303l-.135-.047l-10.946-3.79Zm27.983 3.329l-2.663-3.33l-11.081 3.837l2.313 3.303l11.431-3.81Z"
+                                    clip-rule="evenodd" />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- chartnya --}}
+    <x-chart />
+@endsection
