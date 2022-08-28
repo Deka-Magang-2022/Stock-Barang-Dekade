@@ -3,16 +3,27 @@
 </div>
 
 <script>
-    const ctx = document.getElementById('myChart');
+    const ctx = 'myChart';
     const myChart = new Chart(ctx, {
-        type: 'bar',
         data: {
-            labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September',
-                'Oktober', 'November', 'Desember'
+            labels: [
+                'Januari',
+                'Februari',
+                'Maret',
+                'April',
+                'Mei',
+                'Juni',
+                'Juli',
+                'Agustus',
+                'September',
+                'Oktober',
+                'November',
+                'Desember'
             ],
             datasets: [{
-                label: 'Total Stok Bulanan',
-                data: [9, 19, 3, 5, 2, 3, 9, 23, 12, 5, 7, 4],
+                type: 'line',
+                label: 'Total Stok',
+                data: [9, 13, 3, 5, 2, 3, 9, 14, 12, 5, 7, 4],
                 backgroundColor: [
                     // januari
                     'rgba(255, 99, 132, 0.4)',
@@ -39,9 +50,40 @@
                     // desember
                     'rgba(255, 159, 64, 0.4)',
                 ],
-                borderColor: [],
-                borderWidth: 1
+                borderColor: 'blue',
+                borderWidth: 2,
+                tension: 0.4,
+                pointBorderWidth: 5,
+                pointHoverRadius: 12,
             }]
         },
+        options: {
+            interaction: {
+                intersect: true
+            },
+            plugins: {
+                legend: false,
+                title: {
+                    display: true,
+                    text: 'Total Stok Bulanan'
+                },
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Bulan'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Total Stok'
+                    },
+                    beginAtZero: true,
+                }
+            },
+            responsive: true,
+        }
     });
 </script>
