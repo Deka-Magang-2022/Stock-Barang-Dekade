@@ -1,4 +1,4 @@
-<div class="mt-6 text-left bg-white border border-black">
+<div class="mt-6 text-left bg-white border border-black overflow-auto">
     <table class="w-full">
         <thead>
             <tr class="border-b font-bold [&>*]:p-4 [&>*]:capitalize">

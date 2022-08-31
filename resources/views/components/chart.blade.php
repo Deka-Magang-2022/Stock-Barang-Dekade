@@ -43,8 +43,8 @@
                 borderColor: 'blue',
                 borderWidth: 2,
                 tension: 0.4,
-                pointBorderWidth: 7,
-                pointHoverRadius: 12,
+                pointBorderWidth: 2,
+                pointHoverRadius: 5,
             }]
         },
         options: {

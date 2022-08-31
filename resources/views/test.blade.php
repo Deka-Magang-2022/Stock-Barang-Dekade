@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="p-5">
-        <div class="flex flex-row-reverse">
+        <div class="flex flex-row">
             <div id="sidebar" class="flex h-screen bg-gray-500 overflow-hidden transition-all duration-300 sidebar-hidden">
                 Sidebar
             </div>
@@ -49,6 +49,5 @@
             sidebar.classList.remove('sidebar-expanded');
         }
     });
-
 </script>
 </html>
