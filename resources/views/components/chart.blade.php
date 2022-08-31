@@ -7,18 +7,8 @@
     const myChart = new Chart(ctx, {
         data: {
             labels: [
-                'Januari',
-                'Februari',
-                'Maret',
-                'April',
-                'Mei',
-                'Juni',
-                'Juli',
-                'Agustus',
-                'September',
-                'Oktober',
-                'November',
-                'Desember'
+                'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September',
+                'Oktober', 'November', 'Desember'
             ],
             datasets: [{
                 type: 'line',
@@ -53,7 +43,7 @@
                 borderColor: 'blue',
                 borderWidth: 2,
                 tension: 0.4,
-                pointBorderWidth: 5,
+                pointBorderWidth: 7,
                 pointHoverRadius: 12,
             }]
         },

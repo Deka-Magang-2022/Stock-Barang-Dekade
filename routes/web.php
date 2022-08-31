@@ -35,6 +35,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/transaksi', function () {
         return view('transaksi');
     });
-    Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
 });
 require __DIR__.'/auth.php';
+
+Route::get('/test', function () {
+    return view('test');
+});
