@@ -3,29 +3,13 @@
 
 <head>
     <x-kepala />
-    <style type="text/tailwindcss">
-        @layer utilities {
-        .sidebar-expanded {
-          @apply w-56 visible duration-150;
-        }
-        .sidebar-hidden {
-          @apply w-0 invisible duration-150;
-        }
-        .konten-push {
-            @apply ml-56 duration-150;
-        }
-        .konten-return {
-            @apply ml-0 duration-150;
-        }
-      }
-   </style>
 </head>
 
 <body>
     <div class="overflow-hidden">
         {{-- sidebar --}}
         <aside id="sidebar" class="sidebar-hidden lg:sidebar-expanded min-h-full bg-gradient-to-b from-gray-800 to-gray-600 border-r-2 border-r-black text-white font-[Helvetica] fixed">
-            <ul class="[&>*]:py-2 [&>*]:pl-3 hover:[&>*]:text-blue-300">
+            <ul class="[&>*]:py-2 [&>*]:pl-3 text-slate-100 hover:[&>*]:text-blue-300">
                 <li>
                     <a class="flex flex-row items-center duration-200 ease-in" href="/">
                         <span>
@@ -78,9 +62,9 @@
             </ul>
         </aside>
         {{-- end sidebar --}}
-    
-        <div id="konten" class="w-full">
-            <div class="konten-return lg:konten-push">
+
+        <div class="w-full">
+            <div id="konten" class="konten-return lg:konten-push">
                 <div class="w-full h-full bg-gray-100 sticky top-0 px-7 text-gray-900 text-[times-new-roman]">
                     <div class="p-2 w-full h-full flex flex-row justify-between place-content-center place-items-center">
                         <div class="flex place-items-center">
@@ -96,23 +80,23 @@
                         <div>
                             <a href="{{ route('logout') }}" class="hover:text-white active:bg-gray-500 capitalize text-xs bg-red-200 hover:bg-red-500 rounded-sm px-2 py-[5px]" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">sign out
                             </a>
-    
+
                             <form id="logout-form" action="{{ route('logout') }}" method="POST">
                                 @csrf
                             </form>
                         </div>
                     </div>
                 </div>
-    
-                <div class="bg-gray-100 w-auto min-h-full p-9">
+
+                <div class="bg-gray-100 w-auto min-h-screen p-9">
                     @yield('content')
                 </div>
-    
-                <div class="flex px-8 py-4 bg-slate-100">
+
+                <footer class="flex px-8 py-4 bg-slate-100">
                     <p class="text-sm w-full capitalize">
                         jln keledang No. 48 Vorvo Samarinda, Kalimantan Timur
                     </p>
-                </div>
+                </footer>
             </div>
         </div>
     </div>
@@ -121,16 +105,20 @@
         const sidebar = document.getElementById('sidebar');
         const konten = document.getElementById('konten');
         button.addEventListener('click', () => {
-            if (sidebar.classList.contains('sidebar-hidden')) {
+            if (sidebar.classList.contains('sidebar-expanded')) {
+                sidebar.classList.add('sidebar-hidden');
+                sidebar.classList.remove('sidebar-expanded');
+            } else {
                 sidebar.classList.add('sidebar-expanded');
                 sidebar.classList.remove('sidebar-hidden');
+            }
+
+            if (konten.classList.contains('konten-return')) {
                 konten.classList.add('konten-push');
                 konten.classList.remove('konten-return');
             } else {
                 konten.classList.add('konten-return');
                 konten.classList.remove('konten-push');
-                sidebar.classList.add('sidebar-hidden');
-                sidebar.classList.remove('sidebar-expanded');
             }
         });
 

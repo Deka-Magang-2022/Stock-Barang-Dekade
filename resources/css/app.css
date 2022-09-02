@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .sidebar-expanded {
+        @apply transition-all duration-300 w-56 visible;
+    }
+
+    .sidebar-hidden {
+        @apply transition-all duration-75 w-0 invisible;
+    }
+
+    .konten-push {
+        @apply transition-all duration-300 ml-56;
+    }
+
+    .konten-return {
+        @apply ml-0 transition-all duration-75;
+    }
+}
